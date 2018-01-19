@@ -9,10 +9,10 @@ import android.database.sqlite.SQLiteOpenHelper;
  * Created by topcashback on 19/01/2018.
  */
 
-public class DBOpenHelper extends SQLiteOpenHelper {
+public class DatabaseHelper extends SQLiteOpenHelper {
     static final public String DB_NAME = "trigger_demo";
     static final public int version =1;
-    public DBOpenHelper(Context context, String name, SQLiteDatabase.CursorFactory factory, int version) {
+    public DatabaseHelper(Context context, String name, SQLiteDatabase.CursorFactory factory, int version) {
         super(context, name, null, version);
     }
     @Override
